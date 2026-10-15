@@ -47,7 +47,7 @@ from urllib.parse import urlsplit
 import jev_modes
 
 DEFAULT_ENDPOINT = 'https://api.typesafe.ai/v1/systemone'
-DEFAULT_MODEL = 'jev-latest'
+DEFAULT_MODEL = 'jev-preview'
 DEFAULT_TIMEOUT = 8.0
 LOOPBACK_HOSTS = {'127.0.0.1', 'localhost', '::1'}
 # noul 해석 dead zone(0.4≤v<0.6) — 임계 인접 응답은 신뢰 불가(실측 오탐 0.64·정탐 0.57 공존).

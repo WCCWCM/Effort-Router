@@ -306,7 +306,7 @@ class JevJudgeTests(unittest.TestCase):
             self.run_cli('prune', '--stage', 'fanout', '작업', '--endpoint', mock.endpoint)
         self.assertEqual(mock.hits, 2)
         questions = mock.requests[0]['payload']['questions']
-        self.assertEqual(mock.requests[0]['payload']['model'], 'jev-latest')
+        self.assertEqual(mock.requests[0]['payload']['model'], 'jev-preview')
         self.assertEqual(len(questions), 6)
         self.assertEqual(set(questions['tier']['criteria']), {'S', 'M', 'L', 'XL'})
         for key in RISK_IDS:
